@@ -31,8 +31,9 @@
 
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="search-text">
+                    <button class="btn btn-outline-success" type="submit" id="search">Search</button>
                 </form>
 
             </div>
@@ -40,19 +41,21 @@
     </nav>
 
 
-    <div class="container my-3">
+    <div class="container my-3" style="min-width:50%;">
         <!-- <h1 class="">Welcome to My Notes App</h1> -->
         <div class="card my-5" style="width:100%;">
             <div class="card-body">
-                <h5 class="card-title mb-3">Add a note here</h5>
+
                 <div class="mb-3">
-                    <textarea class="form-control" id="addTxt" rows="3" id=""></textarea>
+                    <textarea class="form-control mb-2" id="addTitle" rows="1" id="">Add Note Title</textarea>
+
+                    <textarea class="form-control" id="addTxt" rows="3" id="">Add Your Notes</textarea>
                 </div>
                 <button class="btn btn-primary" id="addBtn">Add Notes</button>
             </div>
         </div>
         <hr>
-        <h1>Your Notes</h1>
+        <h1 class=" my-4">Your Notes</h1>
         <div id="notesCollection" class="row container-fluid"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -62,8 +65,7 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
 
-    <!-- <script src="notes.js"></script> -->
-    <script src="test.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
