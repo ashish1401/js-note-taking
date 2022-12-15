@@ -5,7 +5,7 @@ showNotes();
 
 
 let addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", function (e) {
+addBtn.addEventListener("click", function () {
     // let text = document.getElementById("addTxt").value;
     // this doesn't work as on clicking all the work is done and once event ends the program returns to its initial state hence local storage needs to be involved
     // localStorage.setItem("notes", text);
